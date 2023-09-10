@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Function to get current day of the week
   function getCurrentDay() {
-      const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
       const today = new Date();
-      return days[today.getDay()];
+      return day[today.getDay()];
   }
 
    // Function to get current UTC time in milliseconds
