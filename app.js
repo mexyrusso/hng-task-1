@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
     return new Date().getTime();
 }
 
+function updateCurrentUTCTime() {
+    document.querySelector('[data-testid="currentUTCTime"]').textContent = getCurrentUTCTime();
+}
+ setInterval(updateCurrentUTCTime, 100);
+
 // Update elements with data-testid attributes
 document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = getCurrentDay();
 document.querySelector('[data-testid="currentUTCTime"]').textContent = getCurrentUTCTime();
